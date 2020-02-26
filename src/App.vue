@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <h1>Countries List</h1>
-     <div>
+     <div class="flex-container">
        <countries-list :countries='countries'></countries-list>
        <country-detail :country='selectedCountry'></country-detail>
      </div>
@@ -50,5 +50,22 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.flex-container {
+  justify-content: space-between;
+  display: inline-flex;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  color: #dda0dd;
+  border-style: dotted;
+  border-color: #dda0dd;
+  background-color: rgba(0,0,0,.03);
+  text-align: center;
 }
 </style>
